@@ -8,26 +8,22 @@ This project consists of:
 - **Backend**: Spring Boot (Java 17) with reactive WebFlux
 - **Frontend**: React 18 with TypeScript and Vite
 
-## Project Structure
+## Quick Start with Docker 🐳
 
-```
-footballstats/
-├── backend/                 # Spring Boot backend
-│   ├── src/
-│   │   ├── main/java/       # Java source code
-│   │   └── test/java/       # Unit tests
-│   ├── pom.xml              # Maven configuration
-│   └── README.md
-├── frontend/                # React frontend
-│   ├── src/
-│   │   ├── components/      # React components
-│   │   └── __tests__/       # Component tests
-│   ├── package.json         # npm configuration
-│   └── README.md
-└── README.md               # This file
+The easiest way to run the application is using Docker Compose:
+
+```bash
+# Start both services
+docker compose up --build
+
+# Access the application
+# Frontend: http://localhost:3000
+# Backend API: http://localhost:8080
 ```
 
-## Quick Start
+For detailed Docker setup instructions, see [DOCKER.md](./DOCKER.md).
+
+## Manual Setup
 
 ### Prerequisites
 
